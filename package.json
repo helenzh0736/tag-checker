@@ -1,0 +1,17 @@
+{
+  "name": "tagchecker",
+  "version": "1.0.0",
+  "description": "Check that all the tags in a given piece of text (a paragraph) are correctly nested, and there are no missing or extra tags.",
+  "main": "tagChecker.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Helen Zhang",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^27.0.6"
+  }
+}
