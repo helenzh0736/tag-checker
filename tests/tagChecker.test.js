@@ -23,7 +23,12 @@ describe('tagChecker',()=>{
 
     it("should return 'Expected </B> found #' if input has a missing closing tag </B>",()=>{
         const result = checker.tagChecker("<B><C>This should be centred and in boldface, but there is a missing closing tag</C>");
-        console.log(result);
         expect(result).toMatch('Expected </B> found #');
+    });
+
+    it("should return 'Expected </C> found #' and ' Expected </B> found #' if input has 2 missing closing tags </B> and </C>",()=>{
+        const result = checker.tagChecker("<B><C>This should be centred and in boldface, but there is a missing closing tag");
+        const pattern = /^(?=.*Expected <\/B> found #)(?=.*Expected <\/C> found #).*$/;
+        expect(result).toMatch(pattern);
     });
 })
