@@ -4,10 +4,10 @@ This program is to check that all the tags in a given piece of text (a paragraph
 ## Prerequisites
 
 This program uses node and npm. Please make sure that you have them locally installed.
-Node version v12.x.x (or greater) is recommended.
+Node version v15.x.x (or greater) is recommended.
 ### Install the Dependencies
 
-From the project folder, install the dependencies:
+From the project directory, install the dependencies:
 
     npm i
 ### Run the Tests
